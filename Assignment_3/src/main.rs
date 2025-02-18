@@ -10,7 +10,7 @@ fn check_guess(guess: i32, secret: i32) -> i32 {
 
 fn main() {
     let secret_number = 25;  // Hardcoded secret number
-    let mut guess = 41;      // Initial guess (simulating user input)
+    let mut guess = 41;      // Initial guess
     let mut attempts = 0;
 
     loop {
@@ -26,7 +26,6 @@ fn main() {
             println!("{} is too low!", guess);
         }
 
-        // Simulate adjusting the guess (e.g., binary search strategy)
         if result == 1 {
             guess -= 3; // Decrease the guess
         } else {
